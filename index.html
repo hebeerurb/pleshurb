@@ -3,88 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotografías de [Tu Nombre]</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #004080;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .gallery img {
-            width: 300px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px;
-            max-width: 400px;
-            margin: auto;
-        }
-        form input[type="text"],
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #004080;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        form input[type="submit"]:hover {
-            background-color: #003366;
-        }
-    </style>
+    <title>portafolio fotográfico de pleshurb</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Fotografías de [Tu Nombre]</h1>
+        <img src="https://i.ibb.co/VD5MD7f/main-logo-blanco.png" alt="Logo Pleshurb">
+        <nav>
+            <ul>
+                <li><a href="sesiones.html">Sesiones</a></li>
+                <li><a href="acerca-de.html">Acerca de mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>        
     </header>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <img src="https://i.ibb.co/ZSYnqTQ/pexels-pixabay-163185.jpg" alt="Sesión 1">
+            <img src="https://i.ibb.co/7G1nb5P/pexels-cottonbro-3585030.jpg" alt="Sesión 2">
+            <img src="https://i.ibb.co/sFY1JCc/pexels-dubtastic-18685806.jpg" alt="Sesión 3">
+        </div>
+    </div>
     
     <div class="gallery">
-        <img src="imagen1.jpg" alt="Sesión 1">
-        <img src="imagen2.jpg" alt="Sesión 2">
-        <img src="imagen3.jpg" alt="Sesión 3">
+        <img src="https://i.ibb.co/C90vNVW/pexels-antonio-prado-1050855-2566238.jpg" alt="Sesión 1">
+        <img src="https://i.ibb.co/gD3Zt2r/pexels-behrouz-sasani-3568050-10001464.jpg" alt="Sesión 2">
+        <img src="https://i.ibb.co/D8JYswv/pexels-cottonbro-3585033.jpg" alt="Sesión 3">
+        <img src="https://i.ibb.co/9Y7mKkz/pexels-alexquezada-13987297.jpg" alt="Sesión4">
         <!-- Agrega más imágenes según sea necesario -->
     </div>
 
-    <form action="#" method="POST">
-        <h2>Contacta conmigo</h2>
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
-        <input type="text" name="email" placeholder="Tu correo electrónico" required>
-        <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
-        <input type="submit" value="Enviar mensaje">
-    </form>
+    <footer>
+        <p>&copy; 2024 pleshurb. Todos los derechos reservados.</p>
+    </footer>    
 </body>
 </html>
