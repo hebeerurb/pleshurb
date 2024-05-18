@@ -34,6 +34,23 @@
         <!-- Agrega más imágenes según sea necesario -->
     </div>
 
+    <script>
+        const carouselInner = document.querySelector('.carousel-inner');
+        const images = document.querySelectorAll('.carousel-inner img');
+        let index = 0;
+
+        function showNextImage() {
+            index++;
+            if (index >= images.length) {
+                index = 0;
+            }
+            const translateXValue = -index * 100;
+            carouselInner.style.transform = `translateX(${translateXValue}%)`;
+        }
+
+        setInterval(showNextImage, 4000);
+    </script>
+
     <footer>
         <p>&copy; 2024 pleshurb. Todos los derechos reservados.</p>
     </footer>    
